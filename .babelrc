@@ -1,0 +1,16 @@
+{
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./src/"],
+        "alias": {
+          "@components": "./src/components/",
+          "@icons": "./src/components/UI/Icons",
+          "@context": "./src/state/context/CartContext",
+          "@constants": "./src/constants"
+        }
+      }
+    ]
+  ]
+}
