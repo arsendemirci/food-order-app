@@ -1,7 +1,7 @@
-import React, { forwardRef } from "react";
+import React from "react";
 import classes from "./Input.module.scss";
 
-const Input = forwardRef((props, ref) => {
+const Input = React.forwardRef((props, ref) => {
   return (
     <div className={classes.input}>
       <label htmlFor="amount">Amount</label>
