@@ -1,6 +1,6 @@
 # Food Ordering App
 
-This project is an assignment from a react course.
+This React.js project is an assignment from a react course.
 
 Its basically an application that you select meals and add desired amount of them into your cart.</br>
 You can manage your cart, see unit price and accumulated price for each line of the order aswell as the grand total
