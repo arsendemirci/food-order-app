@@ -1,14 +1,18 @@
 import { Card, MealItem } from "@components";
 import classes from "./MealsList.module.scss";
-import { meals } from "@constants";
+import { useMealsApi } from "@hooks";
 
 export default function MealsList(props) {
+  const { meals, isLoading } = useMealsApi();
+
   return (
     <Card className={classes.meals}>
       <ul>
-        {meals.map((meal) => (
-          <MealItem key={meal.id} {...meal}></MealItem>
-        ))}
+        {isLoading && <li>Loading meals, Please wait... </li>}
+        {!isLoading &&
+          Object.entries(meals).map(([key, value]) => (
+            <MealItem key={key} id={key} {...value}></MealItem>
+          ))}
       </ul>
     </Card>
   );

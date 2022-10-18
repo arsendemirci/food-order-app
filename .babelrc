@@ -8,7 +8,10 @@
           "@components": "./src/components/",
           "@icons": "./src/components/UI/Icons",
           "@context": "./src/state/context/CartContext",
-          "@constants": "./src/constants"
+          "@constants": "./src/constants",
+          "@api": "./src/api/http/axiosApi",
+          "@services": "./src/api/services",
+          "@hooks": "./src/hooks"
         }
       }
     ]
